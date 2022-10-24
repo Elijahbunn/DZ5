@@ -13,7 +13,7 @@ def Game1(number):
             print(f'{player} win!')
             break
         number2 = int(input(f"{player}, enter your number (1-28): "))
-        if number2 > 28 and number2 < 0:
+        if number2 > 28 or number2 < 0:
             print("You stupid! Enter number from 1 to 28!")
             count -= 1
         else:
